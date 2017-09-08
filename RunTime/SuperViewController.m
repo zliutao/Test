@@ -48,8 +48,8 @@ typedef enum {
     tableView.dataSource = self;
    // [tableView registerClass:[MyTableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view  addSubview:tableView];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.shoppcartview  = [[ShoppingCartView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 50, CGRectGetWidth(self.view.bounds), 50) inView:self.view];
+    self.view.backgroundColor = [UIColor blackColor];
+    self.shoppcartview  = [[ShoppingCartView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 50, CGRectGetWidth(self.view.bounds), 40) inView:self.view];
     [self.view addSubview:self.shoppcartview];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(UpdatemainUI:) name:@"updateUI" object:nil];
     

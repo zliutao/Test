@@ -55,8 +55,9 @@ typedef enum {
     
 //CALayer
     
-
-    
+    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    lab.backgroundColor = [UIColor blackColor];
+    [self.viewa addSubview:lab];
 }
 -(void)UpdatemainUI:(NSNotification *)Notification{
     
